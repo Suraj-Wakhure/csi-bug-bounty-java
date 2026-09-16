@@ -17,21 +17,31 @@ The bugs range from:
 csi-bug-bounty-java/
 ├── src/              # Core business logic (Main, Services, Models)
 ├── utils/            # Helper utilities and the mock database
-├── Makefile          # Build scripts
+├── Makefile          # Build scripts (for Linux/Mac)
+├── build.bat         # Build script (for Windows)
 └── README.md         
 ```
 
 ## How to Compile and Run
 This project relies entirely on standard Java with no external dependencies (no Maven or Gradle required).
 
-**Using Make (Recommended):**
-To compile the code, open your terminal in this repository folder and run:
+**Using Make or Batch script (Recommended):**
+For Linux/Mac, open your terminal in this repository folder and run:
 ```bash
 make
 ```
 To run the main application, type:
 ```bash
 make run
+```
+
+For Windows, open Command Prompt or PowerShell in this repository folder and run:
+```cmd
+build.bat
+```
+To run the main application, type:
+```cmd
+build.bat run
 ```
 
 **Using standard Java commands:**
